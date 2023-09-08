@@ -1,15 +1,40 @@
 footer {
-    height: 300px;
     background-color: #141E46;
     padding-left: 20%;
     padding-right: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
 
-footer .logo {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-p, h3, h2 {
+p,
+.link {
     color: white;
+    text-decoration: none;
+    font-weight: 00;
+    margin-left: 2%;
+}
+
+h3,
+h2,
+address {
+    color: white;
+    font-style: normal;
+    margin-left: 2%;
+}
+
+.section-row {
+    align-items: center;
+}
+
+.working-hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    height: 1px;
+    width: auto;
+    background-color: white;
+    margin-right: 0px;
 }
