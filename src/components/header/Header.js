@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header>
       <div className='left-group'>
-        <img src={Logo} className='logo' />
+        <Link to="/"><img src={Logo} className='logo' /></Link>
         <hr></hr>
         <span>Kestel Can Sürücü Kursu</span>
       </div>
