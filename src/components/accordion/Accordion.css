@@ -1,0 +1,7 @@
+.accordion {
+    border: none;
+}
+.MuiPaper-elevation{
+    border: none !important;
+    box-shadow: none !important;
+  }
