@@ -11,7 +11,7 @@ import { BiLogoInstagramAlt } from 'react-icons/bi'
 
 export default function Contact() {
   return (
-    <div className='main-container'>
+    <div >
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="İletişim" />
       <main>

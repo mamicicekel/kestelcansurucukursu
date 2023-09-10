@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section {}
+
+.h2 {
+    color: black;
+    margin: 0;
+}
+
+.span {
+    color: red;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.ul li {
+    font-size: 18px;
+}
+
+.ul li:not(:last-child) {
+    margin-bottom: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: #757575;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    text-align: right;
+}

@@ -7,7 +7,7 @@ footer {
     margin-top: auto;
 }
 
-p,
+footer p,
 .link {
     color: white;
     text-decoration: none;
@@ -15,24 +15,23 @@ p,
     margin-left: 2%;
 }
 
-h3,
-h2,
-address {
+footer h3,
+h2, .address{
     color: white;
     font-style: normal;
     margin-left: 2%;
 }
 
-.section-row {
+footer .section-row {
     align-items: center;
 }
 
-.working-hours {
+footer .working-hours {
     display: flex;
     justify-content: space-between;
 }
 
-hr {
+footer hr {
     height: 1px;
     width: auto;
     background-color: white;

@@ -2,10 +2,10 @@ import React from 'react'
 import '../footer/Footer.css'
 import Grid from '@mui/material/Grid';
 import { MdLocationPin } from 'react-icons/md';
-import { BsFillTelephoneFill} from 'react-icons/bs'
-import { MdMail} from 'react-icons/md'
-import { BiLogoInstagramAlt} from 'react-icons/bi'
-import { AiOutlineRight} from 'react-icons/ai'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { MdMail } from 'react-icons/md'
+import { BiLogoInstagramAlt } from 'react-icons/bi'
+import { AiOutlineRight } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 
@@ -21,7 +21,7 @@ export default function Footer() {
               <MdLocationPin color='white' size='20px' />
             </Grid>
             <Grid item xs={11}>
-              <address>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
+              <address className='address'>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
             </Grid>
           </Grid>
           <Grid container className='section-row'>
