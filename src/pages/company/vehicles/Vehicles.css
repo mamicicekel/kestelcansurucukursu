@@ -1,0 +1,15 @@
+.main-vehicles {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card {
+    max-width: 400px; 
+}
+
+@media (max-width: 921px) {
+    .main-vehicles {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}

@@ -18,7 +18,7 @@ export default function Classes() {
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Ehliyet Sınıfları" />
-      <main>
+      <main className='main-classes'>
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: 400 }}>

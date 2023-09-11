@@ -1,5 +1,14 @@
-main {
+.main-classes {
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+@media (max-width: 921px) {
+    .main-classes {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
