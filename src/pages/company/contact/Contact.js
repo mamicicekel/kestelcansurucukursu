@@ -31,7 +31,7 @@ export default function Contact() {
                 <MdLocationPin color='black' size='20px'/>
               </Grid>
               <Grid item xs={11}>
-                <address className='address'>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
+                <address className='address address--'>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
               </Grid>
             </Grid>
             <Grid container className='section-row'>
@@ -55,7 +55,7 @@ export default function Contact() {
                 <BiLogoInstagramAlt color='black' size='20px' />
               </Grid>
               <Grid item xs={11}>
-                <p>@kestelcan.mtsk</p>
+                <p>kestelcan.mtsk</p>
               </Grid>
             </Grid>
           </Grid>

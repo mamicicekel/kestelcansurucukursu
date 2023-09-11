@@ -8,20 +8,18 @@ import { BiLogoInstagramAlt } from 'react-icons/bi'
 import { AiOutlineRight } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
-
 export default function Footer() {
-
   return (
-    <footer >
+    <footer>
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <h2>İletişime Geçin</h2>
           <Grid container className='section-row'>
             <Grid item xs={1} >
-              <MdLocationPin color='white' size='20px' />
+              <MdLocationPin color='white' size='20px'/>
             </Grid>
             <Grid item xs={11}>
-              <address className='address'>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
+              <address>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
             </Grid>
           </Grid>
           <Grid container className='section-row'>
@@ -115,7 +113,6 @@ export default function Footer() {
           </div>
         </Grid>
       </Grid>
-
     </footer>
   )
 }

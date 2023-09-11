@@ -15,8 +15,8 @@ main{
     border-radius: 30px;
   }
 
-.text-container p, address{
-    color: black;
+  main .text-container p, address{
+    color: black ;
 }
 
 .section-row {

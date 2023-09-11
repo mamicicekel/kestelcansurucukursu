@@ -8,21 +8,22 @@ footer {
 }
 
 footer p,
-.link {
+footer .link {
     color: white;
     text-decoration: none;
     font-weight: 00;
     margin-left: 2%;
 }
 
-footer h3,
-h2, .address{
+footer h2,
+footer address {
     color: white;
     font-style: normal;
     margin-left: 2%;
 }
 
 footer .section-row {
+    display: flex;
     align-items: center;
 }
 
