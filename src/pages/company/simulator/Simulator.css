@@ -1,0 +1,47 @@
+.main-simulator {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.simulator-image {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.main-simulator .section-article{
+    
+}
+.main-simulator .section-images{
+    
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.ul li {
+    font-size: 18px;
+}
+
+.ul li:not(:last-child) {
+    margin-bottom: 1%;
+}
+
+@media (max-width: 921px) {
+    .main-simulator {
+      padding-left: 15%;
+      padding-right: 5%;
+      padding-top: 20%;
+      padding-bottom: 5%;
+    }
+  
+    .simulator-image {
+        width: 90%;
+    }
+  }
