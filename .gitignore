@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Resim dosyalarını ve videoları yoksay
+*.jpg
+*.png
+*.gif
+*.mp4
+*.avi

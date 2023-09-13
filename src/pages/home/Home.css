@@ -1,0 +1,35 @@
+.main-home {
+    padding: 0;
+}
+
+.carousel-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content {
+    position: absolute;
+    color: #141E46;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
