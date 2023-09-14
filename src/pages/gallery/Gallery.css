@@ -2,3 +2,24 @@
     padding-left: 20%;
     padding-right: 20%;
 }
+
+@media (max-width: 768px) {
+    /* Mobil cihazlar için stil tanımları */
+    .main-gallery {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Tabletler için stil tanımları */
+    .main-gallery {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+  }
+  

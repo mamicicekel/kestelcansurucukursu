@@ -4,6 +4,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import PageHeader from '../../components/pageHeader/PageHeader'
 import { Grid, Card, CardActionArea, Dialog, DialogContent, DialogTitle, colors } from '@mui/material';
+import { BsFillPlayFill } from "react-icons/bs";
 
 export default function Gallery() {
   const mediaList = [
@@ -84,7 +85,7 @@ export default function Gallery() {
       <main className="main-gallery">
         <Grid container spacing={2}>
           {mediaList.map((medya) => (
-            <Grid item key={medya.id} xs={12} sm={6} md={3}>
+            <Grid item key={medya.id} xs={12} sm={6} md={4} lg={3}>
               <Card onClick={() => handleMediaClick(medya)}>
                 <CardActionArea>
                   {medya.tip === 'resim' ? (
@@ -95,30 +96,48 @@ export default function Gallery() {
                     />
                   ) : (
                     // Videoyu burada gösterin
-                    <video width="100%" height="250px"  style={{ objectFit: 'cover' }}>
-                      <source src={medya.url} type="video/mp4" />
-                      Tarayıcınız video etiketini desteklemiyor.
-                    </video>
+                    <div style={{ position: 'relative' }}>
+                      <video width="100%" height="250px" style={{ objectFit: 'cover' }}>
+                        <source src={medya.url} type="video/mp4" />
+                        Tarayıcınız video etiketini desteklemiyor.
+                      </video>
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)',
+                          zIndex: 1,
+                        }}
+                      >
+                        <BsFillPlayFill size={64} color="white" />
+                      </div>
+                    </div>
                   )}
                 </CardActionArea>
               </Card>
             </Grid>
           ))}
         </Grid>
-        <Dialog open={isOpen} onClose={handleClose} style={{backgroundColor:'rgb(0, 0, 0, 0.6)', }}>
-          <DialogTitle>{selectedMedia?.baslik}</DialogTitle>
+        <Dialog
+          open={isOpen}
+          onClose={handleClose}
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }} // Arkaplan rengi burada ayarlanır
+          PaperProps={{ style: { backgroundColor: 'transparent', boxShadow: 'none' } }} // Kenarlık ve gölgeyi kaldırır
+        >
           <DialogContent>
             {selectedMedia?.tip === 'resim' ? (
               <img src={selectedMedia?.url} alt={selectedMedia?.baslik} style={{ width: '100%' }} />
             ) : (
               // Videoyu burada gösterin
-              <video width="100%" controls >
+              <video width="100%" controls>
                 <source src={selectedMedia?.url} type="video/mp4" />
                 Tarayıcınız video etiketini desteklemiyor.
               </video>
             )}
           </DialogContent>
         </Dialog>
+
       </main>
       <Footer />
     </div>
