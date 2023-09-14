@@ -21,11 +21,10 @@ export default function Classes() {
       <main className='main-classes'>
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={4}>
-            <Card sx={{ maxWidth: 400 }}>
+            <Card sx={{ maxWidth: 400, }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
                   image={Motorcycle}
                   alt="green iguana"
                 />
@@ -41,11 +40,10 @@ export default function Classes() {
             </Card>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Card sx={{ maxWidth: 400 }}>
+            <Card sx={{ maxWidth: 400}}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
                   image={Car}
                   alt="green iguana"
                 />
@@ -65,7 +63,6 @@ export default function Classes() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
                   image={Truck}
                   alt="green iguana"
                 />
