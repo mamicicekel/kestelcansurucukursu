@@ -25,13 +25,13 @@ export default function About() {
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Hakkımızda" />
       <main className='main-about'>
         <Grid container spacing={2} columns={12} marginBottom={30}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <section className='parent'>
               <img src={CourseSign1} className='image1' />
               <img src={CourseSign2} className='image2' />
             </section>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <h1>
             Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz
             </h1>
@@ -42,13 +42,13 @@ export default function About() {
           <h3>Eğitmenlerimiz</h3>
           <h1>Sürüş Konusunda Büyük Deneyime Sahibiz</h1>
         </div>
-        <Grid container spacing={2} columns={10}>
-          <Grid item xs={12} md={2}>
+        <Grid container spacing={2} columns={15}>
+          <Grid item xs={15} md={5} lg={3}>
             <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8' }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
+                  height="250vh"
                   image={Egitmen1}
                   alt="green iguana"
                 />
@@ -61,12 +61,12 @@ export default function About() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} md={2}>
-            <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8' }}>
+          <Grid item xs={15} md={5} lg={3}>
+            <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8'}}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
+                  height="250vh"
                   image={Egitmen2}
                   alt="green iguana"
                 />
@@ -79,17 +79,17 @@ export default function About() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={15} md={5} lg={3}>
             <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8' }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
+                  height="250vh"
                   image={Egitmen3}
                   alt="green iguana"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h5" component="div" >
                   Battal Erdurucan
                   </Typography>
                   <Typography variant="body1" color="text.secondary">Eğitmen</Typography>
@@ -97,12 +97,12 @@ export default function About() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={15} md={5} lg={3}>
             <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8' }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
+                  height="250vh"
                   image={Egitmen4}
                   alt="green iguana"
                 />
@@ -115,12 +115,12 @@ export default function About() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={15} md={5} lg={3}>
             <Card sx={{ maxWidth: 400, backgroundColor:'#F4F6F8',  }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="250"
+                  height="250vh"
                   image={Egitmen5}
                   alt="green iguana"
                 />
