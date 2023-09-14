@@ -14,18 +14,18 @@ export default function Foreigners() {
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Yabancılar İçin Ehliyet" />
       <main className='main-foreigners'>
         <Grid container spacing={2} columns={12}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <section className='parent'>
               <img src={Foreigners1} className='image1' />
               <img src={Foreigners2} className='image2' />
             </section>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <h1>
-            Uluslararası Sürücü Deneyiminizi Türkiye'de Sürdürün
+              Uluslararası Sürücü Deneyiminizi Türkiye'de Sürdürün
             </h1>
             <p>
-            Yabancı ülke vatandaşları, vize şartlarını yerine getirdikten sonra altı ay süreyle sınırlı olmak üzere Türkiye'de kaldıkları bu süre boyunca kendi ülkelerinde aldıkları geçerli sürücü belgeleri ile Türkiye’de motorlu taşıt kullanabilirler. Sahip olunan yabancı sürücü belgesi üzerinde kişiye ait fotoğraf yoksa, uluslararası sürücü belgesi veya izni (IDL/P) taşıması zorunlu olmakla birlikte 180 günlük süre sonunda Türkiye’de verilen sürücü belgelerinden kullanılacak motorlu taşıta uygun olan sürücü belgesi alınması zorunluğu da bulunur. Yabancı sürücü belgesi ile sadece motorlu kara taşıtları kullanılabilir ve sahip olunan sürücü belgesinin, Türkiye'de hizmet veren noter onaylı tercümesinin olması gerekiyor.
+              Yabancı ülke vatandaşları, vize şartlarını yerine getirdikten sonra altı ay süreyle sınırlı olmak üzere Türkiye'de kaldıkları bu süre boyunca kendi ülkelerinde aldıkları geçerli sürücü belgeleri ile Türkiye’de motorlu taşıt kullanabilirler. Sahip olunan yabancı sürücü belgesi üzerinde kişiye ait fotoğraf yoksa, uluslararası sürücü belgesi veya izni (IDL/P) taşıması zorunlu olmakla birlikte 180 günlük süre sonunda Türkiye’de verilen sürücü belgelerinden kullanılacak motorlu taşıta uygun olan sürücü belgesi alınması zorunluğu da bulunur. Yabancı sürücü belgesi ile sadece motorlu kara taşıtları kullanılabilir ve sahip olunan sürücü belgesinin, Türkiye'de hizmet veren noter onaylı tercümesinin olması gerekiyor.
             </p>
             <ul>
               <li>Kimlik belgesi</li>

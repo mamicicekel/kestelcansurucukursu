@@ -43,7 +43,7 @@ export default function Footer() {
               <BiLogoInstagramAlt color='white' size='20px' />
             </Grid>
             <Grid item xs={11}>
-              <p>@kestelcan.mtsk</p>
+              <p>kestelcan.mtsk</p>
             </Grid>
           </Grid>
         </Grid>
