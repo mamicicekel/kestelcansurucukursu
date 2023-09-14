@@ -9,7 +9,7 @@ export default function Documents() {
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Gerekli Belgeler" />
-      <main className='main-container'>
+      <main className='main-documents'>
         <div className='section'>
           <h2 className='h2'>Sürücü Kursuna Kayıt İçin Gerekli Evraklar</h2>
           <ul className='ul'>
@@ -19,7 +19,7 @@ export default function Documents() {
             <li>Sağlık raporu <span className='span'>(Aile hekiminden de alınabilir)</span></li>
           </ul>
         </div>
-        <div>
+        <div className='section'>
           <h2 className='h2'>Ehliyet İçin Gerekli Evraklar (Kursu Ve Sınavı Başarıyla Tamamladıktan Sonra)</h2>
           <ul className='ul'>
             <li>Kimlik belgesi</li>
