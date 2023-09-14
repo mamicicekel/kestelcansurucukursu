@@ -1,10 +1,7 @@
 footer {
-    background-color: #141E46;
     padding-left: 20%;
     padding-right: 20%;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
+    background-color: #141E46;
 }
 
 footer p,
@@ -37,4 +34,38 @@ footer hr {
     width: auto;
     background-color: white;
     margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+
+    /* Mobil cihazlar için stil tanımları */
+    footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    .quick-links {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Tabletler için stil tanımları */
+    footer {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    .quick-links {
+        display: none;
+    }
 }

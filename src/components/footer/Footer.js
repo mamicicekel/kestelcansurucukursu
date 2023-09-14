@@ -12,11 +12,11 @@ export default function Footer() {
   return (
     <footer>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={4}>
           <h2>İletişime Geçin</h2>
           <Grid container className='section-row'>
             <Grid item xs={1} >
-              <MdLocationPin color='white' size='20px'/>
+              <MdLocationPin color='white' size='20px' />
             </Grid>
             <Grid item xs={11}>
               <address>Ahmet Vefik Paşa, Şht. Ast. Namık Asutay Cd. 1 B, 16450 Kestel/Bursa</address>
@@ -47,54 +47,54 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={4} className='quick-links'>
           <h2>Hızlı Bağlantılar</h2>
           <Grid container className='section-row' spacing={1}>
-            <Grid item xs={1} >
+            <Grid item xs={0.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/hakkimizda" className='link'>Hakkımızda</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={0.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/araclarimiz" className='link'>Araçlarımız</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/simulator" className='link'>Simülatör</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/iletisim" className='link'>İletişim</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/gerekli-belgeler" className='link'>Gerekli Belgeler</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/ehliyet-siniflari" className='link'>Ehliyet Sınıfları</Link>
             </Grid>
-            <Grid item xs={1} >
+            <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11.5}>
               <Link to="/sikca-sorulan-sorular" className='link'>Sıkça Sorulan Sorular</Link>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={4}>
           <h2>Çalışma Saatleri</h2>
           <p>Kursumuz size hizmet verebilmek için haftanın 6 günü açıktır.</p>
           <div className='working-hours'>
