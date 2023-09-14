@@ -1,13 +1,13 @@
 import React from 'react'
 import '../header/Header.css'
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { HiOutlineMenu } from 'react-icons/hi';
 
 export default function Header() {
 
   return (
-    <header>
+    <header className='main-header'>
       <div className='left-group'>
         <Link to="/"><img src={Logo} className='logo' /></Link>
         <hr></hr>
