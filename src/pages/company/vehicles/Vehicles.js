@@ -22,11 +22,11 @@ export default function Vehicles() {
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={4}>
             <Card className='card'>
-              <CardActionArea sx={{marginBottom:'10px'}}>
+              <CardActionArea sx={{marginBottom:'10px', backgroundColor:'#F1F3F2'}}>
                 <CardMedia
                   component="img"
                   image={Araba1}
-                  height={'2%'}
+                  height={'280vh'}
                   alt="green iguana"
                 />
                 <CardContent>
@@ -42,10 +42,11 @@ export default function Vehicles() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card className='card'>
-              <CardActionArea sx={{marginBottom:'10px'}}>
+              <CardActionArea sx={{marginBottom:'10px', backgroundColor:'#F1F3F2'}}>
                 <CardMedia
                   component="img"
                   image={Araba2}
+                  height={'280vh'}
                   alt="green iguana"
                 />
                 <CardContent>
@@ -61,10 +62,11 @@ export default function Vehicles() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card className='card'>
-              <CardActionArea sx={{marginBottom:'10px'}}>
+              <CardActionArea sx={{marginBottom:'10px', backgroundColor:'#F1F3F2'}}>
                 <CardMedia
                   component="img"
                   image={Araba3}
+                  height={'280vh'}
                   alt="green iguana"
                 />
                 <CardContent>

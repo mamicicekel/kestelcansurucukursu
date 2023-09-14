@@ -4,12 +4,17 @@
 }
 
 .card {
-    max-width: 400px; 
+    max-width: 400px;
 }
 
 @media (max-width: 921px) {
     .main-vehicles {
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .card {
+        max-width:100%;
     }
 }
