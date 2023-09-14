@@ -7,6 +7,11 @@ import Car from '../../assets/car.png'
 import Motorcycle from '../../assets/motorcycle.png'
 import { Grid } from '@mui/material'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { AiFillCar } from 'react-icons/ai'
+import {GiSteeringWheel, GiCarSeat} from 'react-icons/gi'
+import CourseSign2 from '../../assets/kurs-tabela-1.jpeg'
+import CourseSign1 from '../../assets/kurs-tabela-3.jpeg'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   const carouselImages = [
@@ -37,7 +42,7 @@ export default function Home() {
       <Header />
       <main className='main-home'>
         <section className='carousel-container'>
-          <img src={Slayt} alt="Carousel" className='carousel-background-image'/>
+          <img src={Slayt} alt="Carousel" className='carousel-background-image' />
           <div className="carousel-content">
             <Grid container spacing={2} columns={12}>
               <Grid item xs={12} md={6}>
@@ -62,6 +67,32 @@ export default function Home() {
           <button className='carousel-button prev' onClick={prevSlide}><BsFillArrowLeftCircleFill /></button>
           <button className='carousel-button next' onClick={nextSlide}><BsFillArrowRightCircleFill /></button>
         </section>
+        <section className='info-boxes-container'>
+          <Grid container spacing={2} columns={12}>
+            <Grid item xs={12} md={4}>
+              <div className='info-box'>
+                <AiFillCar size={'60px'} color='#F3BD00'/>
+                <h2>Kolayca Araba Sürmeyi Öğrenin</h2>
+                <p>Pratik odaklı yaklaşımımızla kolayca araba sürmeyi öğrenin ve yola emin adımlarla çıkın.</p>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <div className='info-box'>
+                <GiSteeringWheel size={'60px'} color='#F3BD00'/>
+                <h2>Direksiyon Eğitimi</h2>
+                <p>Alanında uzman Bay-Bayan kişilerden oluşan deneyimli kadromuz ile direksiyon dersleri vermekteyiz.</p>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <div className='info-box'>
+                <GiCarSeat size={'60px'} color='#F3BD00'/>
+                <h2>Simülatör</h2>
+                <p>Teknolojiyi her zaman yakından takip eden kurumumuz, simülatör ile sizlere eşsiz bir eğitim vermektedir.</p>
+              </div>
+            </Grid>
+          </Grid>
+        </section>
+       
       </main>
       <Footer />
     </div>
