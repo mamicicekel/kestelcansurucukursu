@@ -31,8 +31,8 @@ export default function Simulator() {
             </section>
           </Grid>
           <Grid item xs={12} md={4}>
-          <img src={CarSimulator} className='simulator-image' />
-          <img src={MotorcycleSimulator} className='simulator-image' />
+            <img src={CarSimulator} className='simulator-image' />
+            <img src={MotorcycleSimulator} className='simulator-image' />
           </Grid>
         </Grid>
       </main>
