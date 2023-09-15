@@ -20,8 +20,8 @@ import { CardActionArea } from '@mui/material';
 export default function About() {
 
   return (
-    <div>
-      <Header />
+    <div id='hakkimizda-top'>
+      <Header/>
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Hakkımızda" />
       <main className='main-about'>
         <Grid container spacing={2} columns={12} marginBottom={30}>

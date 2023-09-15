@@ -1,0 +1,14 @@
+.main-questions {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+@media (max-width: 768px) {
+    /* Mobil cihazlar için stil tanımları */
+    .main-questions {
+        padding:5%;
+        padding-top: 10%;
+    padding-bottom: 10%;
+    }
+  }

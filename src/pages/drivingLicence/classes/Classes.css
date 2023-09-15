@@ -2,6 +2,8 @@
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 @media (max-width: 768px) {

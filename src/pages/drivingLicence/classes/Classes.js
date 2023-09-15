@@ -68,7 +68,7 @@ export default function Classes() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    C Kamyon Ehliyeti
+                    C Sınıfı Kamyon Ehliyeti
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Kamyon, tır ve çekici gibi araçları kullanabilmek için gereken C sınıfı sürücü belgesi halk arasında kamyon ehliyeti olarak da biliniyor.                </Typography>

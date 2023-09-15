@@ -28,7 +28,17 @@
     font-size: 18px;
     padding: 10px;
 }
-
+.carousel-container .button {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #E31E23;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
 .carousel-button.prev {
     left: 10px;
 }
@@ -59,8 +69,7 @@
 }
 
 .info-boxes-container {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
     display: flex;
@@ -70,8 +79,9 @@
 
 .info-box {
     width: 90%;
-    height: 20vh;
+    height: 25vh;
     padding: 5%;
+    text-align: center;
     background-color: #F1F3F2;
     border-radius: 10px;
     display: flex;
@@ -80,9 +90,14 @@
     align-items: center;
 }
 .about-section {
-    margin-top: 5%;
+    margin-top: 10%;
     padding-left: 20%;
     padding-right: 20%;
+}
+.about-section p{
+    color: #757575;
+    margin-bottom: 5%;
+    
 }
 .about-section .parent {
     position: relative;
@@ -95,8 +110,10 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    width: 550px;
-    height: 400px;
+    /* width: 550px;
+    height: 400px; */
+    width: 95%;
+    height: 45vh;
 }
 
 .about-section .image2 {
@@ -104,8 +121,10 @@
     top: -50px;
     left: -50px;
     border: 10px solid white;
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
+    width: 30%;
+    height: auto;
 }
 
 .about-section .button {
@@ -121,19 +140,45 @@
     font-size: 18px;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
+    .carousel-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
     .carousel-content {
         padding-left: 5%;
         padding-right: 5%;
     }
+    .carousel-content p{
+        font-size: 14px;
+    }
+    .carousel-container .button {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        background-color: #E31E23;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
 
     .carousel-background-image {
-        height: 60vh;
+        height: 50vh;
+
     }
 
     .carousel-content img {
-        width: 100%;
+        width: 90%;
     }
+
     
     .carousel-button.prev {
         left: 0px;
@@ -143,8 +188,7 @@
         right: 0px;
     }
     .info-boxes-container {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-bottom: 30%;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -155,6 +199,11 @@
         padding-left: 10%;
         padding-right: 5%;
         padding-top: 30%;
+
+    }
+    .about-section p{
+        margin-bottom: 10%;
+        
     }
     .about-section .image1 {
         position: relative;
@@ -181,3 +230,13 @@
         align-items: center;
     }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Tabletler için stil tanımları */
+    .carousel-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  }

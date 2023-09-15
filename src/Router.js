@@ -9,10 +9,13 @@ import Vehicles from './pages/company/vehicles'
 import Classes from './pages/drivingLicence/classes'
 import Documents from './pages/drivingLicence/documents'
 import Foreigners from './pages/drivingLicence/foreigners'
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 function Router() {
 
   return (
+    <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/hakkimizda" element={<About />} />
@@ -25,6 +28,7 @@ function Router() {
       <Route path="/yabancilar-icin-ehliyet" element={<Foreigners />} />
       <Route path="/galeri" element={<Gallery />} />
     </Routes>
+    </>
   );
 }
 
