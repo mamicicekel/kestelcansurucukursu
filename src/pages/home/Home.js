@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../home/Home.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -12,8 +12,13 @@ import { GiSteeringWheel, GiCarSeat } from 'react-icons/gi'
 import CourseSign2 from '../../assets/kurs-tabela-1.jpeg'
 import CourseSign1 from '../../assets/kurs-tabela-3.jpeg'
 import { Link } from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const carouselImages = [
     {
       title: 'HEM MANUEL HEM DE OTOMATİK VİTES',
@@ -46,13 +51,16 @@ export default function Home() {
           <div className="carousel-content">
             <Grid container spacing={2} columns={12}>
               <Grid item xs={12} sm={6} md={6}>
-                <h5>ALANINDA UZMAN EĞİTMENLER İLE </h5>
-                <h3>{carouselImages[currentIndex].title}</h3>
-                <p>Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.</p>
-                <Link to="/iletisim" className="button">Bize ulaşın</Link>
+                <h5 data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="1000">ALANINDA UZMAN EĞİTMENLER İLE </h5>
+                <h3 data-aos="fade-right" data-aos-duration="1500">{carouselImages[currentIndex].title}</h3>
+                <p data-aos="fade-left" data-aos-duration="1500">Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.</p>
+                <Link to="/iletisim" className="button" data-aos="fade-up" data-aos-delay="500">Bize ulaşın</Link>
               </Grid>
               <Grid item xs={12} sm={6} md={6} >
-                <img src={carouselImages[currentIndex].url} alt={carouselImages[currentIndex].alt} width='90%' />
+                <img src={carouselImages[currentIndex].url} alt={carouselImages[currentIndex].alt} width='90%' data-aos="fade-left" />
               </Grid>
             </Grid>
           </div>
@@ -72,11 +80,11 @@ export default function Home() {
           <Grid container spacing={2} columns={12} marginBottom={30}>
             <Grid item xs={12} md={12} lg={6}>
               <section className='parent'>
-                <img src={CourseSign1} className='image1' />
-                <img src={CourseSign2} className='image2' />
+                <img src={CourseSign1} className='image1' data-aos="fade-left" data-aos-duration="1200"/>
+                <img src={CourseSign2} className='image2' data-aos="fade-right"data-aos-duration="1200"/>
               </section>
             </Grid>
-            <Grid item xs={12} md={12} lg={6}>
+            <Grid item xs={12} md={12} lg={6} data-aos="fade-up"data-aos-duration="1200">
               <h1>
                 Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz
               </h1>
@@ -88,21 +96,21 @@ export default function Home() {
         <section className='info-boxes-container'>
           <Grid container spacing={2} columns={12}>
             <Grid item xs={12} md={4}>
-              <div className='info-box'>
+              <div className='info-box' data-aos="flip-right" data-aos-duration="1200">
                 <AiFillCar size={'25%'} color='#F3BD00' />
                 <h2>Kolayca Araba Sürmeyi Öğrenin</h2>
                 <p>Pratik odaklı yaklaşımımızla kolayca araba sürmeyi öğrenin ve yola emin adımlarla çıkın.</p>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
-              <div className='info-box'>
+              <div className='info-box' data-aos="flip-down" data-aos-duration="1200">
                 <GiSteeringWheel size={'25%'} color='#F3BD00' />
                 <h2>Direksiyon Eğitimi</h2>
                 <p>Alanında uzman Bay-Bayan kişilerden oluşan deneyimli kadromuz ile direksiyon dersleri vermekteyiz.</p>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
-              <div className='info-box'>
+              <div className='info-box' data-aos="flip-left"data-aos-duration="1200">
                 <GiCarSeat size={'25%'} color='#F3BD00' />
                 <h2>Simülatör</h2>
                 <p>Teknolojiyi her zaman yakından takip eden kurumumuz, simülatör ile sizlere eşsiz bir eğitim vermektedir.</p>

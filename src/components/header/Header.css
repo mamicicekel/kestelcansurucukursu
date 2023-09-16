@@ -50,7 +50,9 @@
 .main-header li {
     float: left;
 }
-
+.main-header li a:hover {
+    color: #F3BD00;
+}
 .main-header li a,
 
 .main-header .dropbtn {
@@ -63,10 +65,6 @@
     font-size: 1.2em;
 }
 
-
-.main-header .dropdown:hover .dropbtn {
-    color: #F3BD00;
-}
 
 .main-header li.dropdown {
     display: inline-block;
