@@ -87,7 +87,7 @@ export default function Gallery() {
     <div>
       <Header />
       <PageHeader hasLink={false} pageName="Galeri" />
-      <main className="main-gallery" data-aos="zoom-in" data-aos-duration="1000">
+      <main className="main-gallery" data-aos="fade-up" data-aos-duration="1000">
         <Grid container spacing={2}>
           {mediaList.map((medya) => (
             <Grid item key={medya.id} xs={12} sm={6} md={4} lg={3}>

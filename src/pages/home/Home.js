@@ -19,6 +19,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
   }, [])
+
   const carouselImages = [
     {
       title: 'HEM MANUEL HEM DE OTOMATİK VİTES',
@@ -41,7 +42,6 @@ export default function Home() {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? carouselImages.length - 1 : prevIndex - 1));
   };
-
   return (
     <div>
       <Header />
@@ -60,8 +60,16 @@ export default function Home() {
                 <Link to="/iletisim" className="button" data-aos="fade-up" data-aos-delay="500">Bize ulaşın</Link>
               </Grid>
               <Grid item xs={12} sm={6} md={6} >
-                <img src={carouselImages[currentIndex].url} alt={carouselImages[currentIndex].alt} width='90%' data-aos="fade-left" />
-              </Grid>
+                {carouselImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.url}
+                    alt={image.alt}
+                    width='90%'
+                    data-aos="fade-left"
+                    style={{ display: index === currentIndex ? 'block' : 'none' }}
+                  />
+                ))}              </Grid>
             </Grid>
           </div>
           <div className="carousel-dots">
@@ -80,11 +88,11 @@ export default function Home() {
           <Grid container spacing={2} columns={12} marginBottom={30}>
             <Grid item xs={12} md={12} lg={6}>
               <section className='parent'>
-                <img src={CourseSign1} className='image1' data-aos="fade-left" data-aos-duration="1200"/>
-                <img src={CourseSign2} className='image2' data-aos="fade-right"data-aos-duration="1200"/>
+                <img src={CourseSign1} className='image1' data-aos="fade-left" data-aos-duration="1200" />
+                <img src={CourseSign2} className='image2' data-aos="fade-right" data-aos-duration="1200" />
               </section>
             </Grid>
-            <Grid item xs={12} md={12} lg={6} data-aos="fade-up"data-aos-duration="1200">
+            <Grid item xs={12} md={12} lg={6} data-aos="fade-up" data-aos-duration="1200">
               <h1>
                 Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz
               </h1>
@@ -110,7 +118,7 @@ export default function Home() {
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
-              <div className='info-box' data-aos="flip-left"data-aos-duration="1200">
+              <div className='info-box' data-aos="flip-left" data-aos-duration="1200">
                 <GiCarSeat size={'25%'} color='#F3BD00' />
                 <h2>Simülatör</h2>
                 <p>Teknolojiyi her zaman yakından takip eden kurumumuz, simülatör ile sizlere eşsiz bir eğitim vermektedir.</p>

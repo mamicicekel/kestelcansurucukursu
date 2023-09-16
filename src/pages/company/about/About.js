@@ -35,7 +35,7 @@ export default function About() {
               <img src={CourseSign2} className='image2'  data-aos="fade-right" data-aos-duration="1200"/>
             </section>
           </Grid>
-          <Grid item xs={12} md={12} lg={6} data-aos="flip-right" data-aos-duration="1200">
+          <Grid item xs={12} md={12} lg={6} data-aos="fade-left" data-aos-duration="1200">
             <h1>
             Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz
             </h1>
