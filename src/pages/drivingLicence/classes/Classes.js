@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../classes/Classes.css'
 import Header from '../../../components/header/Header'
 import Footer from '../../../components/footer/Footer'
@@ -12,13 +12,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Classes() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Ehliyet Sınıfları" />
-      <main className='main-classes'>
+      <main className='main-classes' data-aos="fade-up" data-aos-duration="1500">
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: 400, }}>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../simulator/Simulator.css'
 import Header from '../../../components/header/Header'
 import Footer from '../../../components/footer/Footer'
@@ -6,15 +6,19 @@ import PageHeader from '../../../components/pageHeader/PageHeader'
 import { Grid } from '@mui/material'
 import CarSimulator from '../../../assets/car-simulator.jpeg'
 import MotorcycleSimulator from '../../../assets/motor-simulator.jpeg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Simulator() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Simülatör" />
       <main className='main-simulator'>
         <Grid container spacing={2} columns={12} >
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={8} data-aos="fade-up" data-aos-duration="1500">
             <section className='section-article'>
               <h1>Direksiyon Eğitiminin En Güvenli Yolu</h1>
               <p>
@@ -30,7 +34,7 @@ export default function Simulator() {
               </ul>
             </section>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-left" data-aos-duration="1500">
             <img src={CarSimulator} className='simulator-image' />
             <img src={MotorcycleSimulator} className='simulator-image' />
           </Grid>

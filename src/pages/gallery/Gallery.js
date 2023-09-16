@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../gallery/Gallery.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import PageHeader from '../../components/pageHeader/PageHeader'
 import { Grid, Card, CardActionArea, Dialog, DialogContent, DialogTitle, colors } from '@mui/material';
 import { BsFillPlayFill } from "react-icons/bs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Gallery() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const mediaList = [
     {
       id: 1,
@@ -82,7 +87,7 @@ export default function Gallery() {
     <div>
       <Header />
       <PageHeader hasLink={false} pageName="Galeri" />
-      <main className="main-gallery">
+      <main className="main-gallery" data-aos="zoom-in" data-aos-duration="1000">
         <Grid container spacing={2}>
           {mediaList.map((medya) => (
             <Grid item key={medya.id} xs={12} sm={6} md={4} lg={3}>

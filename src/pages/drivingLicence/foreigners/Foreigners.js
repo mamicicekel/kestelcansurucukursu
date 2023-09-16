@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../foreigners/Foreigners.css'
 import Header from '../../../components/header/Header'
 import Footer from '../../../components/footer/Footer'
@@ -6,8 +6,13 @@ import PageHeader from '../../../components/pageHeader/PageHeader'
 import Grid from '@mui/material/Grid';
 import Foreigners2 from '../../../assets/foreigners-2.jpg'
 import Foreigners1 from '../../../assets/foreigners-1.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Foreigners() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div>
       <Header />
@@ -16,11 +21,11 @@ export default function Foreigners() {
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={12} lg={6}>
             <section className='parent'>
-              <img src={Foreigners1} className='image1' />
-              <img src={Foreigners2} className='image2' />
+              <img src={Foreigners1} className='image1' data-aos="fade-left" data-aos-duration="1200"/>
+              <img src={Foreigners2} className='image2' data-aos="fade-right" data-aos-duration="1200"/>
             </section>
           </Grid>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} md={12} lg={6} data-aos="flip-right" data-aos-duration="1200">
             <h1>
               Uluslararası Sürücü Deneyiminizi Türkiye'de Sürdürün
             </h1>

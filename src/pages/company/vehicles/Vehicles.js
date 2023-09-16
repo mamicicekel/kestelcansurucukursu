@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../vehicles/Vehicles.css'
 import Header from '../../../components/header/Header'
 import Footer from '../../../components/footer/Footer'
@@ -12,13 +12,18 @@ import { CardActionArea } from '@mui/material';
 import Araba1 from '../../../assets/araclarimiz-1.jpeg'
 import Araba2 from '../../../assets/araclarimiz-2.jpg'
 import Araba3 from '../../../assets/araclarimiz-3.jpeg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Vehicles() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Araçlarımız" />
-      <main className='main-vehicles'>
+      <main className='main-vehicles'data-aos="fade-up" data-aos-duration="1500">
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={4}>
             <Card className='card'>
