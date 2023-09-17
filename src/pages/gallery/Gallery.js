@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../gallery/Gallery.css'
-import Header from '../../components/header/Header'
+import Header2 from '../../components/header2/Header2'
 import Footer from '../../components/footer/Footer'
 import PageHeader from '../../components/pageHeader/PageHeader'
 import { Grid, Card, CardActionArea, Dialog, DialogContent, DialogTitle, colors } from '@mui/material';
@@ -85,7 +85,7 @@ export default function Gallery() {
 
   return (
     <div>
-      <Header />
+      <Header2/>
       <PageHeader hasLink={false} pageName="Galeri" />
       <main className="main-gallery" data-aos="fade-up" data-aos-duration="1000">
         <Grid container spacing={2}>

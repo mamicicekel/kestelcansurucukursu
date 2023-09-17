@@ -1,0 +1,96 @@
+.active {
+    color: #F3BD00;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav .logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: #172554;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    color: black;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+    nav .logo {
+        width: 120px;
+        position: sticky;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+       
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}

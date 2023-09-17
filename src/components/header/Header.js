@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../header/Header.css'
 import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { HiOutlineMenu } from 'react-icons/hi';
 
 export default function Header() {
-
+  
   return (
     <header className='main-header'>
       <div className='left-group'>
@@ -14,7 +14,7 @@ export default function Header() {
         <span>Kestel Can Sürücü Kursu</span>
       </div>
       <nav>
-        <HiOutlineMenu className='menu-toggle' />
+        <HiOutlineMenu className='menu-toggle'/>
         <ul>
           <li><Link to="/">Anasayfa</Link></li>
           <li class="dropdown">

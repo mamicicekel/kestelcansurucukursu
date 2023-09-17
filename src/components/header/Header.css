@@ -111,7 +111,7 @@
     .main-header .menu-toggle {
         display: flex;
     }
-
+    
     .left-group hr {
         display: none;
     }
@@ -123,6 +123,7 @@
     .main-header ul {
         display: none;
     }
+    
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
