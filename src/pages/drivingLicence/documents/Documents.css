@@ -6,22 +6,17 @@
     padding-right: 15%;
 }
 
-.section {}
+.section {
+    margin-bottom: 0px;
+}
 
-.h2 {
+.main-documents h2 {
     color: black;
     margin: 0;
 
 }
 
-.span {
-    color: red;
-    font-weight: normal;
-    font-size: 18px;
-    font-family: 'Roboto'
-}
-
-.ul {
+.main-documents ul {
     display: flex;
     flex-direction: column;
     color: #757575;
@@ -32,13 +27,20 @@
     padding-left: 10px;
 }
 
-.ul li {
+.main-documents ul li {
     font-size: 18px;
     font-family: 'Roboto'
 }
 
-.ul li:not(:last-child) {
+.main-documents ul li:not(:last-child) {
     margin-bottom: 1%;
+}
+
+.main-documents span {
+    color: red;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Roboto'
 }
 
 table {
@@ -61,15 +63,16 @@ td:nth-child(2) {
 }
 
 @media (max-width: 768px) {
-
-    /* Mobil cihazlar için stil tanımları */
     .main-documents {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 20%;
         padding-bottom: 30%;
         text-align: center;
+    }
 
+    .section {
+        margin-bottom: 75px;
     }
 
     .main-documents h2 {
@@ -77,19 +80,15 @@ td:nth-child(2) {
         margin-bottom: 8%;
     }
 
-    .section {
-        margin-bottom: 75px;
-    }
-
-    .ul li {
+    .main-documents ul li {
         font-size: 16px;
     }
 
-    .ul li:not(:last-child) {
+    .main-documents ul li:not(:last-child) {
         margin-bottom: 25px;
     }
 
-    .span {
+    .main-documents span {
         font-size: 16px;
     }
 }

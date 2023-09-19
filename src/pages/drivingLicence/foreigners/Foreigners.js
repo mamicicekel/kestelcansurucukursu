@@ -1,18 +1,20 @@
-import React,{useEffect} from 'react'
-import '../foreigners/Foreigners.css'
+import React, { useEffect } from 'react'
+import './Foreigners.css'
+import Grid from '@mui/material/Grid'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Header from '../../../components/header/Header'
-import Footer from '../../../components/footer/Footer'
 import PageHeader from '../../../components/pageHeader/PageHeader'
-import Grid from '@mui/material/Grid';
-import Foreigners2 from '../../../assets/foreigners-2.jpg'
+import Footer from '../../../components/footer/Footer'
 import Foreigners1 from '../../../assets/foreigners-1.jpg'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Foreigners2 from '../../../assets/foreigners-2.jpg'
 
 export default function Foreigners() {
+
   useEffect(() => {
     AOS.init();
   }, [])
+
   return (
     <div>
       <Header />
@@ -20,9 +22,9 @@ export default function Foreigners() {
       <main className='main-foreigners'>
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={12} lg={6}>
-            <section className='parent'>
-              <img src={Foreigners1} className='image1' data-aos="fade-left" data-aos-duration="1200"/>
-              <img src={Foreigners2} className='image2' data-aos="fade-right" data-aos-duration="1200"/>
+            <section className='image-container'>
+              <img src={Foreigners1} className='image1' alt='Örnek eğitim fotoğrafı' data-aos="fade-left" data-aos-duration="1200" loading='lazy'/>
+              <img src={Foreigners2} className='image2' alt='Yabancı uyruklu kadın direksiyon dersinde' data-aos="fade-right" data-aos-duration="1200" loading='lazy'/>
             </section>
           </Grid>
           <Grid item xs={12} md={12} lg={6} data-aos="fade-left" data-aos-duration="1200">

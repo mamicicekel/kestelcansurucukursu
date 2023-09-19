@@ -1,20 +1,22 @@
-import React, {useEffect} from 'react'
-import '../documents/Documents.css'
+import React, { useEffect } from 'react'
+import './Documents.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Header from '../../../components/header/Header'
-import Footer from '../../../components/footer/Footer'
 import PageHeader from '../../../components/pageHeader/PageHeader'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Footer from '../../../components/footer/Footer'
 
 export default function Documents() {
+
   useEffect(() => {
     AOS.init();
   }, [])
+
   return (
     <div>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Gerekli Belgeler" />
-      <main className='main-documents'  data-aos="fade-up" data-aos-duration="1500">
+      <main className='main-documents' data-aos="fade-up" data-aos-duration="1500">
         <div className='section'>
           <h2 className='h2'>Sürücü Kursuna Kayıt İçin Gerekli Evraklar</h2>
           <ul className='ul'>

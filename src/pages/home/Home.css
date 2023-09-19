@@ -2,64 +2,61 @@
     padding: 0;
 }
 
-.carousel-container {
+.carousel-section {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 .carousel-background-image {
     width: 100%;
     object-fit: cover;
 }
+
 .carousel-content {
     position: absolute;
-    color: #141E46;
+    left: 0;
     padding-left: 15%;
     padding-right: 15%;
+    color: #141E46;
 }
 
 .carousel-button {
     position: absolute;
     top: 50%;
+    padding: 10px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     font-size: 18px;
-    padding: 10px;
+    cursor: pointer;
 }
-.carousel-container .button {
+
+.carousel-section .button {
     padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
     background-color: #E31E23;
     color: white;
+    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
 }
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
 
 .carousel-dots {
     display: flex;
-    margin-top: 10px;
     position: absolute;
+    margin-top: 10px;
     bottom: 10px;
 }
 
 .carousel-dot {
+    margin: 0 5px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #ccc;
-    margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -68,7 +65,64 @@
     background-color: #333;
 }
 
-.info-boxes-container {
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.about-section {
+    margin-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.about-section .image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about-section .image1 {
+    width: 95%;
+    height: 45vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.about-section .image2 {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border: 10px solid white;
+    width: 30%;
+    height: auto;
+}
+
+.about-section p {
+    margin-bottom: 5%;
+    color: #757575;
+}
+
+.about-section .button {
+    width: 17vh;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3BD00;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.info-boxes-section {
     padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
@@ -89,75 +143,33 @@
     justify-content: center;
     align-items: center;
 }
-.about-section {
-    margin-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.about-section p{
-    color: #757575;
-    margin-bottom: 5%;
-    
-}
-.about-section .parent {
-    position: relative;
-    top: 0;
-    left: 0;
-}
 
-.about-section .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    /* width: 550px;
-    height: 400px; */
-    width: 95%;
-    height: 45vh;
-}
-
-.about-section .image2 {
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    border: 10px solid white;
-    /* width: 150px;
-    height: 150px; */
-    width: 30%;
-    height: auto;
-}
-
-.about-section .button {
-    width: 17vh;
-    margin-top: 20px;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    background-color: #F3BD00;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-}
 
 @media (max-width: 768px) {
-    .carousel-container {
+    .carousel-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
+    .carousel-background-image {
+        height: 55vh;
+
+    }
+
     .carousel-content {
         padding-left: 5%;
         padding-right: 5%;
         display: flex;
     }
-    .carousel-content p{
+
+    .carousel-content p {
         font-size: 14px;
     }
-    .carousel-container .button {
+
+    .carousel-section .button {
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -171,41 +183,24 @@
         cursor: pointer;
     }
 
-    .carousel-background-image {
-        height: 55vh;
-
-    }
-
     .carousel-content img {
         width: 80%;
     }
 
-    
     .carousel-button.prev {
         left: 0px;
     }
-    
+
     .carousel-button.next {
         right: 0px;
     }
-    .info-boxes-container {
-        padding-bottom: 30%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .info-box {
-        height: auto;
-    }
+
     .about-section {
         padding-left: 10%;
         padding-right: 5%;
         padding-top: 30%;
+    }
 
-    }
-    .about-section p{
-        margin-bottom: 10%;
-        
-    }
     .about-section .image1 {
         position: relative;
         top: 0;
@@ -224,20 +219,35 @@
         height: auto;
     }
 
+    .about-section p {
+        margin-bottom: 10%;
+
+    }
+
     .about-section .teachers {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    .info-boxes-section {
+        padding-bottom: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .info-box {
+        height: auto;
+    }
 }
+
 @media (min-width: 600px) and (max-width: 1024px) {
-    /* Tabletler için stil tanımları */
-    .carousel-container {
+    .carousel-section {
         display: flex;
         position: relative;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-  }
+}

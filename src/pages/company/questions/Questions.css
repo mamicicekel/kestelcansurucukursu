@@ -4,11 +4,22 @@
     padding-right: 20%;
     padding-left: 20%;
 }
+
+.accordion {
+    border: none;
+}
+
+.MuiPaper-elevation {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 @media (max-width: 768px) {
+
     /* Mobil cihazlar için stil tanımları */
     .main-questions {
-        padding:5%;
+        padding: 5%;
         padding-top: 10%;
-    padding-bottom: 10%;
+        padding-bottom: 10%;
     }
-  }
+}

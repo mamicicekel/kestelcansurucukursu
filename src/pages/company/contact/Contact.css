@@ -16,7 +16,7 @@
   border-radius: 30px;
 }
 
-.main-contact .text-container p,
+.main-contact p,
 address {
   color: black;
   font-style: normal;
@@ -27,7 +27,6 @@ address {
 }
 
 @media (max-width: 768px) {
-  /* Mobil cihazlar için stil tanımları */
   .main-contact {
     padding-top: 20%;
     padding-bottom: 20%;
