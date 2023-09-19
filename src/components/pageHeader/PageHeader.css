@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     flex-direction: column;
     align-items: center;
     position: relative; /* Gerekli */
@@ -22,5 +22,14 @@
 
 .page-name {
     color: white;
-    font-size: 5vh;
+    font-size: 2.8em;
 }
+@media (max-width: 768px) {
+    .container {
+        padding-bottom: 10%;
+    }
+    .page-name {
+        color: white;
+        font-size: 2em;
+    }
+  }

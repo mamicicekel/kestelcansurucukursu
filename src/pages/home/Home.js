@@ -67,7 +67,7 @@ export default function Home() {
                     alt={image.alt}
                     width='90%'
                     data-aos="fade-left"
-                    style={{ display: index === currentIndex ? 'block' : 'none' }}
+                    style={{ display: index === currentIndex ? 'inline-block' : 'none' }}
                   />
                 ))}              </Grid>
             </Grid>
