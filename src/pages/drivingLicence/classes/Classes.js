@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Classes.css'
+import { Helmet } from 'react-helmet'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -40,6 +41,12 @@ export default function Classes() {
 
   return (
     <div>
+      <Helmet>
+        <title>Ehliyet Sınıfları | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="kestel ehliyet sınıfları, kestel a ehliyet, kestel b ehliyet, kestel c ehliyet, kestel b1 ehliyet, kestel a1 ehliyet, kestel a2 ehliyet , kestel c1 ehliyet, kestel kamyon ehliyeti, kestel src belgesi"></meta>
+        <meta name="description" content="Bursa Kestel bölgesinde Can Sürücü Kursu olarak sizlere Motosiklet Ehliyeti, Otomobil Ehliyeti ve Özel Direksiyon Dersi hizmeti sağlıyoruz"></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Ehliyet Sınıfları" />
       <main className='main-classes' data-aos="fade-up" data-aos-duration="1500">

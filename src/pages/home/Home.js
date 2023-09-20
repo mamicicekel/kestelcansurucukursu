@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Home.css'
+import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom'
 import { Grid } from '@mui/material'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs"
@@ -62,6 +63,13 @@ export default function Home() {
 
   return (
     <div>
+      <Helmet>
+        <title>Anasayfa | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <link rel="icon" href="../../../../public/favicon.ico" type="image/x-icon" />
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="sürücü kursu, bursa sürücü kursu, kestel sürücü kursu, kestel can sürücü kursu,  can sürücü kursu, bursa ehliyet, ehliyet merak edilenler, bursa en iyi sürücü kursu, bursa sürücü kursu ehliyet"></meta>
+        <meta name="description" content="Bursa Kestel bölgesinde Can Sürücü Kursu olarak sizlere motosiklet ehliyeti, otomobil ehliyeti, kamyon ehliyeti ve özel direksiyon dersi hizmeti sağlıyoruz."></meta>
+      </Helmet>
       <Header />
       <main className='main-home'>
         <section className='carousel-section'>
@@ -72,7 +80,7 @@ export default function Home() {
                 <h5 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">ALANINDA UZMAN EĞİTMENLER İLE</h5>
                 <h3 data-aos="fade-right" data-aos-duration="1500">{carouselImages[currentIndex].title}</h3>
                 <p data-aos="fade-left" data-aos-duration="1500">Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.</p>
-                <Link to="/iletisim" className="button" data-aos="fade-up" data-aos-delay="500">Bize ulaşın</Link>
+                <Link to="/kurumsal/iletisim" className="button" data-aos="fade-up" data-aos-delay="500">Bize ulaşın</Link>
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
                 {carouselImages.map((image, index) => (
@@ -112,7 +120,7 @@ export default function Home() {
             <Grid item xs={12} md={12} lg={6} data-aos="fade-up" data-aos-duration="1200">
               <h1>Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz</h1>
               <p>Sürücü Kursu olarak, sürücülük konusundaki kapsamlı deneyimimiz ve uzman eğitmen kadromuzla, güvenli ve yetkin sürücüler yetiştirmeyi hedefliyoruz. Misyonumuz, öğrencilerimize trafik kurallarını ve yol güvenliğini öğretmek, araçları etkili bir şekilde kullanmayı öğretmek ve gelecekteki sürücülerin trafikte kendilerini ve diğerlerini güvende hissetmelerini sağlamaktır. Eğitim programlarımız, katılımcıların ihtiyaçlarına ve seviyelerine uygun olarak özelleştirilmiştir. Modern eğitim araçları, simülatörler ve pratik sürüş dersleri ile öğrencilerimizin kendilerine olan güvenlerini arttırmayı ve sürücülük becerilerini geliştirmeyi amaçlıyoruz. Sürücü kursumuz, kaliteli eğitim anlayışı, disiplinli yaklaşımı ve güvenilir hizmetleriyle tanınmaktadır.</p>
-              <Link to="/hakkimizda#hakkimizda-top" className="button">Daha fazlasını oku</Link>
+              <Link to="/kurumsal/hakkimizda#hakkimizda-top" className="button">Daha fazlasını oku</Link>
             </Grid>
           </Grid>
         </section>

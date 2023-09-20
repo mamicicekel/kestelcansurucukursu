@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import './Gallery.css'
+import { Helmet } from "react-helmet"
 import { Grid, Card, CardActionArea, Dialog, DialogContent } from '@mui/material'
 import { BsFillPlayFill } from "react-icons/bs"
 import AOS from 'aos'
@@ -76,6 +77,12 @@ export default function Gallery() {
 
   return (
     <div>
+      <Helmet>
+        <title>Galeri | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="bursa sürücü kursu, bursa ehliyet, bursa ehliyet kursu, bursa en iyi sürücü kursu, bursa b ehliyet, bursa a ehliyet, bursa a2 ehliyet, bursa a1 ehliyet,bursa c ehliyet,bursa ce ehliyet,bursa işmakinası kursu, bursa iş kamyonu ehliyeti,bursa sürücü kursu arabaları"></meta>
+        <meta name="description" content="Kestel Can Sürücü Kursumuzdan ehliyet sınavı ve direksiyon derslerinin fotoğrafları, Sürücü Kursu araçlarımızın ve Eğitmenlerimizin fotoğraflarını inceleyebilirsiniz"></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink={false} pageName="Galeri" />
       <main className="main-gallery" data-aos="fade-up" data-aos-duration="1000">
@@ -85,7 +92,7 @@ export default function Gallery() {
               <Card onClick={() => handleMediaClick(media)}>
                 <CardActionArea>
                   {media.tip === 'resim' ? (
-                    <img src={media.url} alt={media.baslik} style={{ width: '100%', height: '250px', objectFit: 'cover' }} loading='lazy'/>
+                    <img src={media.url} alt={media.baslik} style={{ width: '100%', height: '250px', objectFit: 'cover' }} loading='lazy' />
                   ) : (
                     <div style={{ position: 'relative' }}>
                       <video width="100%" height="250px" style={{ objectFit: 'cover' }} loading='lazy'>

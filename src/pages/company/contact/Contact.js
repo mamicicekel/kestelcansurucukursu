@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Contact.css'
+import { Helmet } from 'react-helmet'
 import { Grid } from '@mui/material'
 import { MdLocationPin } from 'react-icons/md'
 import { BsFillTelephoneFill } from 'react-icons/bs'
@@ -38,6 +39,12 @@ export default function Contact() {
 
   return (
     <div >
+      <Helmet>
+        <title>İletişim | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="kestel sürücü kursu i̇letişim, kestel sürücü kursu adres, can sürücü kursu adres, kestel sürücü kursu nerede,kestel bursa sürücü kursu nerede,bursa sürücü kursu adres"></meta>
+        <meta name="description" content="Kestel Can Sürücü Kursu olarak bulunduğumuz bölgede en iyi kaliteli eğitim vererek sürücü adaylarını ehliyet sahibi yapıyoruz.Bizimle irtibata geç ve ehliyet al"></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="İletişim" />
       <main className='main-contact'>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './About.css'
+import { Helmet } from 'react-helmet'
 import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card'
 import { CardActionArea } from '@mui/material'
@@ -50,14 +51,20 @@ export default function About() {
 
   return (
     <div id='hakkimizda-top'>
+      <Helmet>
+        <title>Hakkımızda | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="kestel sürücü kursu, kestel can sürücü kursu hakkımızda, kestel sürücü kursu ehliyet, bursa kestel, kestel en iyi sürücü kursu, kestel ehliyet kursu, kestel b ehliyet, kestel a ehliyet, kestel c ehliyet, kestel iş kamyonu ehliyeti"></meta>
+        <meta name="description" content="Bursa Kestel bölgesinde Can Sürücü Kursu olarak sizlere Motosiklet Ehliyeti, Otomobil Ehliyeti ve Özel Direksiyon Dersi hizmeti sağlıyoruz"></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Hakkımızda" />
       <main className='main-about'>
         <Grid container spacing={2} columns={12} marginBottom={30}>
           <Grid item xs={12} md={12} lg={6}>
             <section className='image-container'>
-              <img src={CourseSign1} className='image1' alt='Kurs tabelası' data-aos="fade-left" data-aos-duration="1200" loading='lazy'/>
-              <img src={CourseSign2} className='image2' alt='Kurs binası' data-aos="fade-right" data-aos-duration="1200" loading='lazy'/>
+              <img src={CourseSign1} className='image1' alt='Kurs tabelası' data-aos="fade-left" data-aos-duration="1200" loading='lazy' />
+              <img src={CourseSign2} className='image2' alt='Kurs binası' data-aos="fade-right" data-aos-duration="1200" loading='lazy' />
             </section>
           </Grid>
           <Grid item xs={12} md={12} lg={6} data-aos="fade-left" data-aos-duration="1200">
@@ -77,7 +84,7 @@ export default function About() {
               <Card sx={{ maxWidth: 400, backgroundColor: '#F4F6F8' }} data-aos="fade-up" data-aos-duration="500">
                 <CardActionArea>
                   <CardMedia
-                  loading='lazy'
+                    loading='lazy'
                     component="img"
                     height="250vh"
                     image={instructor.url}

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Simulator.css'
+import { Helmet } from 'react-helmet'
 import { Grid } from '@mui/material'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -18,6 +19,12 @@ export default function Simulator() {
   return (
     <div>
       <Header />
+      <Helmet>
+        <title>İletişim | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="sürücü kursu simülatör, kestel sürücü kursu simülasyon, ehliyet Araba simülatörü, ehliyet motor simülatörü,  can sürücü kursu simülatör, kestel ehliyet Gerçekçi simülatör, ehliyet simülasyon"></meta>
+        <meta name="description" content="Gerçekçi simülasyon deneyimi sunan simülatörlerle tanışın. Kestel Can Sürücü Kursu olarak simülatör eğitimleri veriyoruz."></meta>
+      </Helmet>
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Simülatör" />
       <main className='main-simulator'>
         <Grid container spacing={2} columns={12} >
@@ -38,8 +45,8 @@ export default function Simulator() {
             </section>
           </Grid>
           <Grid item xs={12} md={4} data-aos="fade-left" data-aos-duration="1500">
-            <img src={CarSimulator} className='simulator-image' alt='Otomobil simülatörü'loading='lazy'/>
-            <img src={MotorcycleSimulator} className='simulator-image' alt='Motosiklet simülatörü' loading='lazy'/>
+            <img src={CarSimulator} className='simulator-image' alt='Otomobil simülatörü' loading='lazy' />
+            <img src={MotorcycleSimulator} className='simulator-image' alt='Motosiklet simülatörü' loading='lazy' />
           </Grid>
         </Grid>
       </main>

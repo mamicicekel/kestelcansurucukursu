@@ -54,43 +54,43 @@ export default function Footer() {
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/hakkimizda" className='link'>Hakkımızda</Link>
+              <Link to="/kurumsal/hakkimizda" className='link'>Hakkımızda</Link>
             </Grid>
             <Grid item xs={0.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/araclarimiz" className='link'>Araçlarımız</Link>
+              <Link to="/kurumsal/araclarimiz" className='link'>Araçlarımız</Link>
             </Grid>
             <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/simulator" className='link'>Simülatör</Link>
+              <Link to="/kurumsal/simulator" className='link'>Simülatör</Link>
             </Grid>
             <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/iletisim" className='link'>İletişim</Link>
+              <Link to="/kurumsal/iletisim" className='link'>İletişim</Link>
             </Grid>
             <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/gerekli-belgeler" className='link'>Gerekli Belgeler</Link>
+              <Link to="/ehliyet/gerekli-belgeler" className='link'>Gerekli Belgeler</Link>
             </Grid>
             <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/ehliyet-siniflari" className='link'>Ehliyet Sınıfları</Link>
+              <Link to="/ehliyet/ehliyet-siniflari" className='link'>Ehliyet Sınıfları</Link>
             </Grid>
             <Grid item xs={.5} >
               <AiOutlineRight color='white' size='20px' />
             </Grid>
             <Grid item xs={11.5}>
-              <Link to="/sikca-sorulan-sorular" className='link'>Sıkça Sorulan Sorular</Link>
+              <Link to="/kurumsal/sikca-sorulan-sorular" className='link'>Sıkça Sorulan Sorular</Link>
             </Grid>
           </Grid>
         </Grid>

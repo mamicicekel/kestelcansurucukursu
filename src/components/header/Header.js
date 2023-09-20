@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <header ref={headerRef} className={`main-header ${isOpenedMenu ? 'responsive' : ''}`}>
       <div className='left-group'>
-        <Link to="/"><img src={Logo} className='logo' /></Link>
+        <Link to="/"><img src={Logo} className='logo' alt='Kestel Can Sürücü Kursu Logo' loading='lazy'/></Link>
         <hr></hr>
         <span>Kestel Can Sürücü Kursu</span>
       </div>
@@ -52,19 +52,19 @@ export default function Header() {
           <li className={isOpenedKurumsal ? 'dropdown' : ''}>
             <Link to="javascript:void(0)" className="dropbtn" onClick={toggleKurumsal}>Kurumsal</Link>
             <div className="dropdown-content">
-              <Link to="/hakkimizda">Hakkımızda</Link>
-              <Link to="/araclarimiz">Araçlarımız</Link>
-              <Link to="/simulator">Simülatör</Link>
-              <Link to="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</Link>
-              <Link to="/iletisim">İletişim</Link>
+              <Link to="/kurumsal/hakkimizda">Hakkımızda</Link>
+              <Link to="/kurumsal/araclarimiz">Araçlarımız</Link>
+              <Link to="/kurumsal/simulator">Simülatör</Link>
+              <Link to="/kurumsal/sikca-sorulan-sorular">Sıkça Sorulan Sorular</Link>
+              <Link to="/kurumsal/iletisim">İletişim</Link>
             </div>
           </li>
           <li className={isOpenedEhliyet ? 'dropdown' : ''}>
             <Link to="javascript:void(0)" className="dropbtn" onClick={toggleEhliyet}>Ehliyet</Link>
             <div className="dropdown-content">
-              <Link to="/gerekli-belgeler">Gerekli Belgeler</Link>
-              <Link to="/ehliyet-siniflari">Ehliyet Sınıfları</Link>
-              <Link to="/yabancilar-icin-ehliyet">Yabancılar İçin Ehliyet</Link>
+              <Link to="/ehliyet/gerekli-belgeler">Gerekli Belgeler</Link>
+              <Link to="/ehliyet/ehliyet-siniflari">Ehliyet Sınıfları</Link>
+              <Link to="/ehliyet/yabancilar-icin-ehliyet">Yabancılar İçin Ehliyet</Link>
             </div>
           </li>
           <li><Link to="/galeri">Galeri</Link></li>

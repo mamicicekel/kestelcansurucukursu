@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Documents.css'
+import { Helmet } from 'react-helmet'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Header from '../../../components/header/Header'
@@ -14,6 +15,12 @@ export default function Documents() {
 
   return (
     <div>
+      <Helmet>
+        <title>Gerekli Belgeler | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="bursa ehliyet, ehliyet için gerekli evraklar, bursa ehliyet evrak, gerekli evrak, bursa en iyi sürücü kursu,  kestel iş kamyonu ehliyeti, kestel sürücü kursu, can sürücü kursu, ehliyet harç, sürücü belgesi gerekli evraklar, sürücü harç"></meta>
+        <meta name="description" content="Kestel Ehliyet ve Gerekli Evraklar için Kestel Can Sürücü Kursumuzun sayfasını ziyaret edebilir veya Can Sürücü Kursumuzu arayıp detaylı bilgi alabilirsiniz."></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Gerekli Belgeler" />
       <main className='main-documents' data-aos="fade-up" data-aos-duration="1500">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Foreigners.css'
+import { Helmet } from 'react-helmet'
 import Grid from '@mui/material/Grid'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -17,14 +18,20 @@ export default function Foreigners() {
 
   return (
     <div>
+      <Helmet>
+        <title>Yabancılar İçin Ehliyet | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="Kestel yabancı sürücü belgesi, Uluslararası sürücü belgesi Kestel, Yabancılar için ehliyet başvurusu, Yabancı sürücü belgesi alımı,  can sürücü kursu, bursa ehliyet, ehliyet merak edilenler, bursa en iyi sürücü kursu, bursa sürücü kursu ehliyet"></meta>
+        <meta name="description" content="Yabancılar için ehliyet başvurusu, şartlar, evraklar ve süreç hakkında detaylı bilgiye ulaşın. Uluslararası sürücü belgesi alımı, ehliyet çevirme işlemleri ve geçerlilik konularında rehberimizden faydalanın."></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Ehliyet" pageName="Yabancılar İçin Ehliyet" />
       <main className='main-foreigners'>
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={12} lg={6}>
             <section className='image-container'>
-              <img src={Foreigners1} className='image1' alt='Örnek eğitim fotoğrafı' data-aos="fade-left" data-aos-duration="1200" loading='lazy'/>
-              <img src={Foreigners2} className='image2' alt='Yabancı uyruklu kadın direksiyon dersinde' data-aos="fade-right" data-aos-duration="1200" loading='lazy'/>
+              <img src={Foreigners1} className='image1' alt='Örnek eğitim fotoğrafı' data-aos="fade-left" data-aos-duration="1200" loading='lazy' />
+              <img src={Foreigners2} className='image2' alt='Yabancı uyruklu kadın direksiyon dersinde' data-aos="fade-right" data-aos-duration="1200" loading='lazy' />
             </section>
           </Grid>
           <Grid item xs={12} md={12} lg={6} data-aos="fade-left" data-aos-duration="1200">

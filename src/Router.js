@@ -1,5 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/home/Home';
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/home/Home'
 import Gallery from './pages/gallery/Gallery'
 import About from './pages/company/about'
 import Contact from './pages/company/contact'
@@ -9,25 +9,24 @@ import Vehicles from './pages/company/vehicles'
 import Classes from './pages/drivingLicence/classes'
 import Documents from './pages/drivingLicence/documents'
 import Foreigners from './pages/drivingLicence/foreigners'
-import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 function Router() {
-
   return (
     <>
-    <ScrollToTop/>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/hakkimizda" element={<About />} />
-      <Route path="/araclarimiz" element={<Vehicles />} />
-      <Route path="/simulator" element={<Simulator />} />
-      <Route path="/sikca-sorulan-sorular" element={<Questions />} />
-      <Route path="/iletisim" element={<Contact />} />
-      <Route path="/gerekli-belgeler" element={<Documents />} />
-      <Route path="/ehliyet-siniflari" element={<Classes />} />
-      <Route path="/yabancilar-icin-ehliyet" element={<Foreigners />} />
-      <Route path="/galeri" element={<Gallery />} />
-    </Routes>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/kurumsal/hakkimizda" element={<About />} />
+        <Route path="/kurumsal/araclarimiz" element={<Vehicles />} />
+        <Route path="/kurumsal/simulator" element={<Simulator />} />
+        <Route path="/kurumsal/sikca-sorulan-sorular" element={<Questions />} />
+        <Route path="/kurumsal/iletisim" element={<Contact />} />
+        <Route path="/ehliyet/gerekli-belgeler" element={<Documents />} />
+        <Route path="/ehliyet/ehliyet-siniflari" element={<Classes />} />
+        <Route path="/ehliyet/yabancilar-icin-ehliyet" element={<Foreigners />} />
+        <Route path="/kurumsal/galeri" element={<Gallery />} />
+      </Routes>
     </>
   );
 }

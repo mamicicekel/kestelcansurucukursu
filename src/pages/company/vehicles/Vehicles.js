@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Vehicles.css'
+import { Helmet } from 'react-helmet'
 import { Grid } from '@mui/material'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
@@ -41,6 +42,12 @@ export default function Vehicles() {
 
   return (
     <div>
+      <Helmet>
+        <title>İletişim | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="Sürücü kursu araçları, Araç filosu, Sürücü kursu araç seçenekleri, Sürücü eğitim araçları,  Sürücü okulu araçları, kestel sürücü kursu araçları, direksiyon eğitimi"></meta>
+        <meta name="description" content="Sürücü kursu araç filomuz, geniş ve modern seçenekler sunmaktadır. En güvenli ve konforlu araçlarımızla sürücü eğitiminizi alın. Araç filosunu keşfedin."></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Araçlarımız" />
       <main className='main-vehicles' data-aos="fade-up" data-aos-duration="1500">
@@ -50,7 +57,7 @@ export default function Vehicles() {
               <Card className='card'>
                 <CardActionArea sx={{ marginBottom: '10px', backgroundColor: '#F1F3F2' }}>
                   <CardMedia
-                  loading='lazy'
+                    loading='lazy'
                     component="img"
                     image={vehicle.url}
                     height={'280vh'}

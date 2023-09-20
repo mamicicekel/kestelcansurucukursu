@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Questions.css'
+import { Helmet } from 'react-helmet'
 import Accordion from '@mui/material/Accordion'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import AccordionSummary from '@mui/material/AccordionSummary'
@@ -56,6 +57,12 @@ export default function Questions() {
 
   return (
     <div>
+      <Helmet>
+        <title>İletişim | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
+        <meta charset="utf-8"></meta>
+        <meta name="keywords" content="kestel ehliyet, kestel ehliyet fiyatları, kestel ehliyet alma yaşı, kestel ehliyet için gerekli evraklar, kestel ehliyet randevu, kestel ehliyet sınavı, bursa en iyi sürücü kursu, bursa direksiyon dersi, bursa direksiyon sınavı, bursa ehliyet sıkça sorulan sorular, bursa ehliyet taban fiyat, bursa ehliyet sınıfları"></meta>
+        <meta name="description" content="Kestel Ehliyet Hakkında sıkça sorulan sorular, Bursa Ehliyet Hakkında sıkça sorulan sorular, Ehliyet alma süreci, Ehliyet Fiyatları, Ehliyet Harçları, Ehliyet Randevu, Direksiyon Dersi, E-Sınav Elektronik sınav, Kestel Ehliyet nasıl alınır, "></meta>
+      </Helmet>
       <Header />
       <PageHeader hasLink prevPageName="Kurumsal" pageName="Sıkça Sorulan Sorular" />
       <main className='main-questions' data-aos="fade-up" data-aos-duration="1500">
