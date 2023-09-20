@@ -10,6 +10,7 @@ import Classes from './pages/drivingLicence/classes'
 import Documents from './pages/drivingLicence/documents'
 import Foreigners from './pages/drivingLicence/foreigners'
 import ScrollToTop from './components/scrollToTop/ScrollToTop'
+import NotFound from './pages/notFound/NotFound'
 
 function Router() {
   return (
@@ -26,9 +27,11 @@ function Router() {
         <Route path="/ehliyet/ehliyet-siniflari" element={<Classes />} />
         <Route path="/ehliyet/yabancilar-icin-ehliyet" element={<Foreigners />} />
         <Route path="/kurumsal/galeri" element={<Gallery />} />
+        <Route path="*" element={<NotFound />} status={404} />
       </Routes>
     </>
   );
 }
 
 export default Router;
+
