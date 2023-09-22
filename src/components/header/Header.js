@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import '../header/Header.css'
 import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
-import { HiOutlineMenu } from 'react-icons/hi';
+import { HiOutlineMenu } from 'react-icons/hi'
+import { AiOutlineDown } from 'react-icons/ai'
 
 export default function Header() {
   const [isOpenedMenu, setIsOpenedMenu] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
         <ul>
           <li><Link to="/">Anasayfa</Link></li>
           <li className={isOpenedKurumsal ? 'dropdown' : ''}>
-            <Link to="javascript:void(0)" className="dropbtn" onClick={toggleKurumsal}>Kurumsal</Link>
+            <Link to="javascript:void(0)" className="dropbtn" onClick={toggleKurumsal}>Kurumsal <AiOutlineDown size='12px'/></Link>
             <div className="dropdown-content">
               <Link to="/kurumsal/hakkimizda">Hakkımızda</Link>
               <Link to="/kurumsal/araclarimiz">Araçlarımız</Link>
@@ -60,7 +61,7 @@ export default function Header() {
             </div>
           </li>
           <li className={isOpenedEhliyet ? 'dropdown' : ''}>
-            <Link to="javascript:void(0)" className="dropbtn" onClick={toggleEhliyet}>Ehliyet</Link>
+            <Link to="javascript:void(0)" className="dropbtn" onClick={toggleEhliyet}>Ehliyet <AiOutlineDown size='12px'/></Link>
             <div className="dropdown-content">
               <Link to="/ehliyet/gerekli-belgeler">Gerekli Belgeler</Link>
               <Link to="/ehliyet/ehliyet-siniflari">Ehliyet Sınıfları</Link>

@@ -10,7 +10,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import Slayt from '../../assets/slayt-1.jpg'
+import CarouselBackground from '../../assets/carousel-background.jpg'
 import CourseSign2 from '../../assets/kurs-tabela-1.jpeg'
 import CourseSign1 from '../../assets/kurs-tabela-3.jpeg'
 
@@ -62,10 +62,10 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       <Helmet>
         <title>Anasayfa | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
-        <link rel="icon" href="../../../../public/favicon.ico" type="image/x-icon" />
+        <link id="favicon" rel="icon" href="../../assets/favicon.ico"/>
         <meta charset="utf-8"></meta>
         <meta name="keywords" content="sürücü kursu, bursa sürücü kursu, kestel sürücü kursu, kestel can sürücü kursu,  can sürücü kursu, bursa ehliyet, ehliyet merak edilenler, bursa en iyi sürücü kursu, bursa sürücü kursu ehliyet"></meta>
         <meta name="description" content="Bursa Kestel bölgesinde Can Sürücü Kursu olarak sizlere motosiklet ehliyeti, otomobil ehliyeti, kamyon ehliyeti ve özel direksiyon dersi hizmeti sağlıyoruz."></meta>
@@ -73,7 +73,7 @@ export default function Home() {
       <Header />
       <main className='main-home'>
         <section className='carousel-section'>
-          <img src={Slayt} alt="Carousel arka planının şehir temalı fotoğrafı." className='carousel-background-image' loading='lazy' />
+          <img src={CarouselBackground} alt="Carousel arka planının şehir temalı fotoğrafı." className='carousel-background-image' loading='lazy' />
           <div className="carousel-content">
             <Grid container spacing={2} columns={12}>
               <Grid item xs={12} sm={6} md={6}>
@@ -139,6 +139,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }

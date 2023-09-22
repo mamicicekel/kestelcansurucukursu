@@ -2,6 +2,9 @@ footer {
     padding-left: 20%;
     padding-right: 20%;
     background-color: #141E46;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 footer p,
@@ -36,12 +39,17 @@ footer hr {
     margin-right: 0px;
 }
 
+footer .github-icon {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 @media (max-width: 768px) {
 
     /* Mobil cihazlar için stil tanımları */
     footer {
         padding-left: 10%;
         padding-right: 10%;
+        align-items: center;
     }
 
     footer h2 {
@@ -50,6 +58,10 @@ footer hr {
 
     .quick-links {
         display: none;
+    }
+    footer .github-icon {
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 }
 
@@ -59,6 +71,7 @@ footer hr {
     footer {
         padding-left: 25%;
         padding-right: 25%;
+        align-items: center;
     }
 
     footer h2 {
@@ -67,5 +80,9 @@ footer hr {
 
     .quick-links {
         display: none;
+    }
+    footer .github-icon {
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 }

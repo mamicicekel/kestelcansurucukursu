@@ -5,7 +5,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdMail } from 'react-icons/md'
 import { BiLogoInstagramAlt } from 'react-icons/bi'
-import { AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineRight, AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
@@ -113,6 +113,9 @@ export default function Footer() {
           </div>
         </Grid>
       </Grid>
+      <a href="https://github.com/mamicicekel" target="_blank" className='github-icon'>
+        <AiFillGithub color='white' />
+      </a>
     </footer>
   )
 }
