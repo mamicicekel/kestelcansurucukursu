@@ -113,9 +113,12 @@ export default function Footer() {
           </div>
         </Grid>
       </Grid>
-      <a href="https://github.com/mamicicekel" target="_blank" className='github-icon'>
-        <AiFillGithub color='white' />
-      </a>
+      <div className='credit'>
+        <a href="https://github.com/mamicicekel" target="_blank" className='github-icon'>
+          <AiFillGithub color='white' />
+        </a>
+        <p>‣ 2023</p>
+      </div>
     </footer>
   )
 }

@@ -14,6 +14,9 @@ footer .link {
     font-weight: 00;
     margin-left: 2%;
 }
+footer .link:hover {
+    color: #d4d4ff;
+}
 
 footer h2,
 footer address {
@@ -38,11 +41,18 @@ footer hr {
     background-color: white;
     margin-right: 0px;
 }
-
-footer .github-icon {
+footer .credit {
+    display: flex;
+    align-items: center;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+footer .credit p{
+    color: white;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
 @media (max-width: 768px) {
 
     /* Mobil cihazlar için stil tanımları */
@@ -58,10 +68,6 @@ footer .github-icon {
 
     .quick-links {
         display: none;
-    }
-    footer .github-icon {
-        margin-top: 30px;
-        margin-bottom: 10px;
     }
 }
 
@@ -80,9 +86,5 @@ footer .github-icon {
 
     .quick-links {
         display: none;
-    }
-    footer .github-icon {
-        margin-top: 30px;
-        margin-bottom: 10px;
     }
 }
