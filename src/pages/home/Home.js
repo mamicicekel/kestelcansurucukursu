@@ -10,23 +10,24 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import CarouselBackground from '../../assets/carousel-background.jpg'
 import CourseSign2 from '../../assets/kurs-tabela-1.jpeg'
 import CourseSign1 from '../../assets/kurs-tabela-3.jpeg'
 
 export default function Home() {
 
-  const carouselImages = [
+  const carouselItems = [
     {
+      photoUrl: require('../../assets/car.png'),
       title: 'HEM MANUEL HEM DE OTOMATİK VİTES',
-      url: require('../../assets/car.png'),
-      alt: 'B sınıfı ehliyet için örnek araba.'
+      altTitle: 'ALANINDA UZMAN EĞİTMENLER İLE',
+      description: 'Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.',
     },
     {
-      title: 'TÜM CC MOTOR EHLİYET BELGESİNİ VERİYORUZ',
-      url: require('../../assets/motorcycle.png'),
-      alt: 'A sınıfı ehliyet için örnek motosiklet.'
-    }
+      photoUrl: require('../../assets/motorcycle.png'),
+      title: "125 CC'YE KADAR MOTORSİKLET EHLİYETİ",
+      altTitle: 'ALANINDA UZMAN EĞİTMENLER İLE',
+      description: 'Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.',
+    },
   ]
 
   const infoBoxes = [
@@ -47,19 +48,22 @@ export default function Home() {
     }
   ]
 
+  
+
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   useEffect(() => {
     AOS.init();
   }, [])
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  function prevItem() {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1));
+  }
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === carouselImages.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? carouselImages.length - 1 : prevIndex - 1));
-  };
+  function nextItem() {
+    setCurrentIndex((prevIndex) => (prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1));
+  }
 
   return (
     <>
@@ -72,43 +76,32 @@ export default function Home() {
       </Helmet>
       <Header />
       <main className='main-home'>
-        <section className='carousel-section'>
-          <img src={CarouselBackground} alt="Carousel arka planının şehir temalı fotoğrafı." className='carousel-background-image' loading='lazy' />
-          <div className="carousel-content">
-            <Grid container spacing={2} columns={12}>
-              <Grid item xs={12} sm={6} md={6}>
-                <h5 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">ALANINDA UZMAN EĞİTMENLER İLE</h5>
-                <h3 data-aos="fade-right" data-aos-duration="1500">{carouselImages[currentIndex].title}</h3>
-                <p data-aos="fade-left" data-aos-duration="1500">Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.</p>
-                <Link to="/kurumsal/iletisim" className="button" data-aos="fade-up" data-aos-delay="500">Bize ulaşın</Link>
-              </Grid>
-              <Grid item xs={12} sm={6} md={6}>
-                {carouselImages.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image.url}
-                    alt={image.alt}
-                    width='90%'
-                    data-aos="fade-left"
-                    style={{ display: index === currentIndex ? 'inline-block' : 'none' }}
-                    loading='lazy'
-                  />
-                ))}
-              </Grid>
-            </Grid>
-          </div>
-          <div className="carousel-dots">
-            {carouselImages.map((_, index) => (
-              <span
-                key={index}
-                className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
-                onClick={() => setCurrentIndex(index)}>
-              </span>
-            ))}
-          </div>
-          <button className='carousel-button prev' onClick={prevSlide}><BsFillArrowLeftCircleFill /></button>
-          <button className='carousel-button next' onClick={nextSlide}><BsFillArrowRightCircleFill /></button>
-        </section>
+      <div className='carousel'>
+        <button onClick={prevItem} className='carousel-button prev'><BsFillArrowLeftCircleFill /></button>
+        {
+          carouselItems.map((carouselItem, index) => (
+            <div className='carousel-content' key={index}>
+              <div className='carousel-left-content'>
+                <h2 style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.altTitle}</h2>
+                <h1 style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.title}</h1>
+                <p style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.description}</p>
+                <button style={{ display: index === currentIndex ? 'block' : 'none' }} className='contact-button'>Bize Ulaşın</button>
+              </div>
+              <img src={carouselItem.photoUrl} style={{ display: index === currentIndex ? 'inline-block' : 'none' }} />
+            </div>
+          ))
+        }
+        <button onClick={nextItem} className='carousel-button next'><BsFillArrowRightCircleFill /></button>
+        <div className="carousel-dots">
+          {carouselItems.map((_, index) => (
+            <span
+              key={index}
+              className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(index)}>
+            </span>
+          ))}
+        </div>
+      </div>
         <section className='about-section'>
           <Grid container spacing={2} columns={12} marginBottom={30}>
             <Grid item xs={12} md={12} lg={6}>

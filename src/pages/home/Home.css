@@ -2,11 +2,16 @@
     padding: 0;
 }
 
-.carousel-section {
+.carousel {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 70vh;
     position: relative;
+    background-image: url('../../assets//carousel-background.jpg');
+    color: rgb(12, 0, 94);
 }
 
 .carousel-background-image {
@@ -15,24 +20,95 @@
 }
 
 .carousel-content {
-    position: absolute;
-    left: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-    color: #141E46;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.carousel-button {
+.carousel-left-content {
     position: absolute;
-    top: 50%;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
+    left: 15%;
+    width: 40%;
+}
+
+
+@keyframes h2-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.carousel-content h2 {
     font-size: 18px;
-    cursor: pointer;
+    animation-name: h2-animation;
+    animation-duration: 0.8s;
 }
 
-.carousel-section .button {
+@keyframes h1-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.carousel-content h1 {
+    animation-name: h1-animation;
+    animation-duration: 1s;
+}
+
+@keyframes p-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.carousel-content p {
+    width: 80%;
+    animation-name: p-animation;
+    animation-duration: 1.2s;
+}
+
+@keyframes img-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.carousel-content img {
+    position: absolute;
+    right: 15%;
+    width: 30%;
+    animation-name: img-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.contact-button {
+    margin-top: 20px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -42,15 +118,44 @@
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    animation-name: p-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    transition: all .5s ease;
+}
+
+.contact-button:hover {
+    background-color: #ff0008;
+}
+
+.carousel-button {
+    height: max-content;
     position: absolute;
-    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #969696;
+
+    transition: all .5s ease;
+}
+
+.carousel-button:hover {
+    color: #333;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
 }
 
 .carousel-dots {
     display: flex;
     position: absolute;
-    margin-top: 10px;
-    bottom: 10px;
+    bottom: 5%;
 }
 
 .carousel-dot {
@@ -65,14 +170,6 @@
 
 .carousel-dot.active {
     background-color: #333;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
 }
 
 .about-section {
@@ -117,11 +214,16 @@
     text-decoration: none;
     border-radius: 5px;
     border: none;
-    background-color: #F3BD00;
+    background-color: #E31E23;
     color: white;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    transition: all .5s ease;
+
+}
+.about-section .button:hover {
+    background-color: #ff0008;
 }
 
 .info-boxes-section {
@@ -146,49 +248,39 @@
     align-items: center;
 }
 
+@media (max-width: 1024px) {
+    .carousel-content {
+        flex-direction: column;
+    }
 
-@media (max-width: 768px) {
-    .carousel-section {
+    .carousel-left-content {
+        position: static;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
 
-    .carousel-background-image {
-        height: 55vh;
-
+    .carousel-content h2 {
+        font-size: 16px;
     }
 
-    .carousel-content {
-        padding-left: 5%;
-        padding-right: 5%;
-        display: flex;
+    .carousel-content h1 {
+        font-size: 20px;
     }
 
     .carousel-content p {
         font-size: 14px;
     }
 
-    .carousel-section .button {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 14px;
-        position: static;
-    }
-
     .carousel-content img {
-        width: 80%;
+        position: static;
+        width: 60%;
     }
+}
 
-    .carousel-button.prev {
-        left: 0px;
-    }
-
-    .carousel-button.next {
-        right: 0px;
-    }
+@media (max-width: 768px) {
 
     .about-section {
         padding-left: 10%;

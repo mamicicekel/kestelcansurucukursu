@@ -27,7 +27,7 @@ function Router() {
         <Route path="/ehliyet/ehliyet-siniflari" element={<Classes />} />
         <Route path="/ehliyet/yabancilar-icin-ehliyet" element={<Foreigners />} />
         <Route path="/galeri" element={<Gallery />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/404" element={<NotFound />} />
       </Routes>
     </>
   );
