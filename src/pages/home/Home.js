@@ -18,7 +18,7 @@ export default function Home() {
   const carouselItems = [
     {
       photoUrl: require('../../assets/car.png'),
-      title: 'HEM MANUEL HEM DE OTOMATİK VİTES',
+      title: 'MANUEL VİTES İLE ARAÇ KULLANIMI',
       altTitle: 'ALANINDA UZMAN EĞİTMENLER İLE',
       description: 'Alanında Uzman Eğitmenler ve tecrübeli kadromuzla; yenilikçi eğitim anlayışını benimseyip öğrenci merkezli eğitim veren bir kurumdur.',
     },
@@ -76,7 +76,7 @@ export default function Home() {
       </Helmet>
       <Header />
       <main className='main-home'>
-      <div className='carousel'>
+      <section className='carousel'>
         <button onClick={prevItem} className='carousel-button prev'><BsFillArrowLeftCircleFill /></button>
         {
           carouselItems.map((carouselItem, index) => (
@@ -85,7 +85,7 @@ export default function Home() {
                 <h2 style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.altTitle}</h2>
                 <h1 style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.title}</h1>
                 <p style={{ display: index === currentIndex ? 'block' : 'none' }}>{carouselItem.description}</p>
-                <button style={{ display: index === currentIndex ? 'block' : 'none' }} className='contact-button'>Bize Ulaşın</button>
+                <Link to="/kurumsal/iletisim" style={{ display: index === currentIndex ? 'block' : 'none' }} className='contact-button'>Bize Ulaşın</Link>
               </div>
               <img src={carouselItem.photoUrl} style={{ display: index === currentIndex ? 'inline-block' : 'none' }} />
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
             </span>
           ))}
         </div>
-      </div>
+      </section>
         <section className='about-section'>
           <Grid container spacing={2} columns={12} marginBottom={30}>
             <Grid item xs={12} md={12} lg={6}>

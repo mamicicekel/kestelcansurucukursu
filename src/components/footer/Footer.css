@@ -13,9 +13,10 @@ footer .link {
     text-decoration: none;
     font-weight: 00;
     margin-left: 2%;
+    transition: all .25s ease-in-out;
 }
 footer .link:hover {
-    color: #d4d4ff;
+    color: #ffd292;
 }
 
 footer h2,
