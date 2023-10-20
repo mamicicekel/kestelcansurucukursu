@@ -11,6 +11,7 @@ export default function NotFound() {
                 <title>404 Hatası | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
                 <link rel="icon" href="../../../../public/favicon.ico" type="image/x-icon" />
                 <meta charset="utf-8"></meta>
+                <meta name="google-site-verification" content="nx15mbvdjc893dopADXPgFUIVdhDgeXrDg_jvt_oscA" />
             </Helmet>
             <h1>404</h1>
             <h2>Üzgünüz, aradığınız sayfa maalesef bulunamadı.</h2>

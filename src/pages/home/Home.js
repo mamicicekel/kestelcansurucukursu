@@ -73,6 +73,7 @@ export default function Home() {
         <meta charset="utf-8"></meta>
         <meta name="keywords" content="sürücü kursu, bursa sürücü kursu, kestel sürücü kursu, kestel can sürücü kursu,  can sürücü kursu, bursa ehliyet, ehliyet merak edilenler, bursa en iyi sürücü kursu, bursa sürücü kursu ehliyet"></meta>
         <meta name="description" content="Bursa Kestel bölgesinde Can Sürücü Kursu olarak sizlere motosiklet ehliyeti, otomobil ehliyeti, kamyon ehliyeti ve özel direksiyon dersi hizmeti sağlıyoruz."></meta>
+        <meta name="google-site-verification" content="nx15mbvdjc893dopADXPgFUIVdhDgeXrDg_jvt_oscA" />
       </Helmet>
       <Header />
       <main className='main-home'>
@@ -113,7 +114,7 @@ export default function Home() {
             <Grid item xs={12} md={12} lg={6} data-aos="fade-up" data-aos-duration="1200">
               <h1>Güvenli ve Yetkin Sürücüler Yetiştirmeyi Hedefliyoruz</h1>
               <p>Sürücü Kursu olarak, sürücülük konusundaki kapsamlı deneyimimiz ve uzman eğitmen kadromuzla, güvenli ve yetkin sürücüler yetiştirmeyi hedefliyoruz. Misyonumuz, öğrencilerimize trafik kurallarını ve yol güvenliğini öğretmek, araçları etkili bir şekilde kullanmayı öğretmek ve gelecekteki sürücülerin trafikte kendilerini ve diğerlerini güvende hissetmelerini sağlamaktır. Eğitim programlarımız, katılımcıların ihtiyaçlarına ve seviyelerine uygun olarak özelleştirilmiştir. Modern eğitim araçları, simülatörler ve pratik sürüş dersleri ile öğrencilerimizin kendilerine olan güvenlerini arttırmayı ve sürücülük becerilerini geliştirmeyi amaçlıyoruz. Sürücü kursumuz, kaliteli eğitim anlayışı, disiplinli yaklaşımı ve güvenilir hizmetleriyle tanınmaktadır.</p>
-              <Link to="/kurumsal/hakkimizda#hakkimizda-top" className="button">Daha fazlasını oku</Link>
+              <Link to="/kurumsal/hakkimizda" className="button">Daha fazlasını oku</Link>
             </Grid>
           </Grid>
         </section>

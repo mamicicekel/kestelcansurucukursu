@@ -50,7 +50,7 @@ export default function About() {
   }, [])
 
   return (
-    <div id='hakkimizda-top'>
+    <div>
       <Helmet>
         <title>Hakkımızda | Kestel Can Sürücü Kursu | Ehliyet Belgesi | Direksiyon Dersi</title>
         <meta charset="utf-8"></meta>
